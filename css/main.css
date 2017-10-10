@@ -726,7 +726,7 @@ https://jsfiddle.net/Lysdora/xbhaaL5w/ */
 /* Source hover btn triangle
 http://jsfiddle.net/ytgs8/8/
 https://jsfiddle.net/Lysdora/e9869tvw/ */
-.main-form {
+#main-form {
   height: 400px;
   width: 100%;
   background-color: grey;

@@ -185,6 +185,47 @@
       </div>
 
     </section>
+    <!-- /End: Section Projets
+      ======================================= -->
+
+      <!-- Start: Section Contact
+        ======================================= -->
+        <section class="contact">
+          <div class="container bt-top">
+            <div class="row">
+              <div class="col-sm-12">
+                <h2>Nous contacter</h2>
+                <i class="ion-record"></i>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.lorem5 <br /> Placeat, quod consectetur adipisicing elit. Placeat, quod.</p>
+              </div>
+            </div>
+            <div class="main-form">
+              <div class="row">
+                <div class="col-sm-3">
+                  hehe
+                </div>
+                <div class="col-sm-6">
+                  lol
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </section>
+        <script>
+             function initMap() {
+               var uluru = {lat: -25.363, lng: 131.044};
+               var map = new google.maps.Map(document.getElementById('main-form'), {
+                 zoom: 4,
+                 center: uluru
+               });
+               var marker = new google.maps.Marker({
+                 position: uluru,
+                 map: map
+               });
+             }
+           </script>
 
   </main>
   <!--Jquery-->
@@ -193,6 +234,8 @@
   <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
   <!--main js-->
   <script src="js/main.js"></script>
+  <!--Google Map JS API-->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB90uD4OAUYptlG_Y21NEPQv72vU_Fj00A&callback=initMap"></script>
 </body>
 
 </html>

@@ -1,0 +1,70 @@
+.projets {
+  background: #F5F5F5;
+
+  .btn-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+
+  .btn-portfolio {
+    background-color: #E5E5E5;
+    color: #999;
+    font-weight: 600;
+    // padding: 0.8em;
+    display: flex;
+    padding: 1em;
+    margin-top: 1em;
+    margin-left: 1em;
+    transition: 0.5s all ease-in-out;
+    border-bottom: 2px solid transparent;
+    position: relative;
+
+    &:hover {
+      background-color: $blue;
+      color: #fff;
+      border-bottom: 2px solid $color-border-top;
+      border-bottom-left-radius: 1px;
+    }
+
+    &:hover::after {
+      border-left: solid transparent 10px;
+      border-right: solid transparent 10px;
+      border-top: solid $blue 10px;
+      bottom: -12px;
+      content: " ";
+      height: 0;
+      left: 50%;
+      margin-left: -10px;
+      position: absolute;
+      width: 0;
+    }
+  }
+}
+// add little pb to img portfolio //
+
+.main-iso {
+  position: relative;
+
+  img {
+    padding-bottom: 20px;
+
+    &:hover {
+      filter: grayscale(70%);
+      // transform: scale(0.9);
+      transition: 0.5s all ease-in-out;
+    }
+  }
+}
+/* Source portfolio
+https://jsfiddle.net/Lysdora/xbhaaL5w/ */
+/* Source hover btn triangle
+http://jsfiddle.net/ytgs8/8/
+https://jsfiddle.net/Lysdora/e9869tvw/ */

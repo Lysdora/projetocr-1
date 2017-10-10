@@ -1,0 +1,54 @@
+/*----------------------------------------------
+--Banner
+-----------------------------------------------  */
+
+.slider {
+  background: url("../img/bg1.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  display: flex;
+  margin-top: 1em;
+
+  .slider_container {
+    display: flex;
+    width: 1140px;
+    margin: auto;
+    padding: 1em;
+  }
+
+  .slider_text {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    h1 {
+      color: #fff;
+      text-shadow: 2px 4px 3px rgba(0,0,0,0.09);
+      text-transform: uppercase;
+      line-height: 1.2;
+      font-weight: 600;
+      span {
+        color: $blue;
+      }
+    }
+    p {
+      color: #fff;
+      margin-top: 1em;
+      font-weight: 600;
+    }
+    .btn {
+      color: #fff;
+      background-color: $blue;
+      font-weight: bold;
+      border-radius: 2px;
+    }
+    .slider_btn {
+      display: flex;
+      margin-right: auto;
+      padding: 0.6em;
+      margin-top: 1em;
+      border-bottom:3px solid rgba(36, 101, 132, 0.48);
+    }
+  }
+
+}

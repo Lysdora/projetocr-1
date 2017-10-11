@@ -370,6 +370,7 @@ h1, h2, h3, h4, h5, h6 {
 
 section {
   margin-top: 2em;
+  padding: 4em;
   text-align: center;
 }
 
@@ -761,6 +762,24 @@ select {
   margin-bottom: 30px;
 }
 
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #5cadd3;
+  opacity: 0.7;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #5cadd3;
+  opacity: 0.7;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #5cadd3;
+  opacity: 0.7;
+}
+
 select {
   padding: 6px;
   height: 32px;
@@ -797,6 +816,7 @@ label {
   display: block;
   margin-bottom: 8px;
   text-align: left;
+  font-weight: 400;
 }
 
 /* Contact info */
@@ -841,6 +861,43 @@ label {
 
 .contact_info h3 {
   color: #5cadd3;
+}
+
+.social-icon {
+  background: rgba(92, 173, 211, 0.01);
+  padding: 1em;
+}
+
+.social-icon h4 {
+  color: #5cadd3;
+  margin-bottom: 1em;
+  font-weight: 400;
+}
+
+.social-icon i {
+  color: #5cadd3;
+  padding: 0.5em;
+  font-size: 1.6em;
+}
+
+.social-icon .ion-social-twitter:hover {
+  color: #55acee;
+}
+
+.social-icon .ion-social-facebook:hover {
+  color: #3b5999;
+}
+
+.social-icon .ion-social-pinterest:hover {
+  color: #bd081c;
+}
+
+.social-icon .ion-social-linkedin:hover {
+  color: #0077B5;
+}
+
+.social-icon .ion-social-googleplus:hover {
+  color: #dd4b39;
 }
 
 /*# sourceMappingURL=main.css.map */

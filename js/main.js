@@ -18,3 +18,6 @@ $('.iso-nav a').click(function(){
 	});
 	return false;
 });
+
+
+$('#yourElement').addClass('animated bounceOutLeft');

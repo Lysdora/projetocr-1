@@ -36,6 +36,12 @@ select {
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
   margin-bottom: 30px;
 }
+input::placeholder,
+textarea::placeholder {
+  color: $blue;
+  opacity: 0.7;
+}
+
 
 select {
   padding: 6px;
@@ -72,6 +78,7 @@ label {
   display: block;
   margin-bottom: 8px;
   text-align: left;
+  font-weight: 400;
 }
 
 /* Contact info */
@@ -102,4 +109,35 @@ p {
 h3 {
   color: $blue;
 }
+}
+
+.social-icon {
+  background: rgba(92, 173, 211, 0.01);
+  padding: 1em;
+  h4 {
+    color: $blue;
+    margin-bottom: 1em;
+    font-weight: 400;
+  }
+  i {
+    color: $blue;
+    padding: 0.5em;
+    font-size: 1.6em;
+  }
+  .ion-social-twitter:hover {
+    color: #55acee;
+  }
+  .ion-social-facebook:hover {
+    color: #3b5999;
+  }
+  .ion-social-pinterest:hover {
+    color: #bd081c;
+  }
+  .ion-social-linkedin:hover{
+    color: #0077B5
+  }
+  .ion-social-googleplus:hover {
+    color: #dd4b39;
+  }
+
 }

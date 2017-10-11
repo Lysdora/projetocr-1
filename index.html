@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!--Ionicons-->
-  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="css/ionicons.css">
   <!--Font Awesome-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <!--css-->
   <link rel="stylesheet" href="css/main.css">
   <!--Google Fonts-->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-  <title>Document</title>
+  <title>WebAgency</title>
 </head>
 
 <body>
@@ -151,7 +151,7 @@
           <!--First line item img portfolio-->
           <div class="row">
             <div class="col-sm-3 item creative">
-              <img src="img/01.jpg" alt="img portfolio" width="100%">
+              <img src="img/01.jpg" alt="img portfolio">
               <div class="bottomright"></div>
             </div>
             <div class="col-sm-3 item portfolio">
@@ -188,48 +188,105 @@
     <!-- /End: Section Projets
       ======================================= -->
 
-      <!-- Start: Section Contact
+    <!-- Start: Section Contact
         ======================================= -->
-        <section class="contact">
-          <div class="container bt-top">
-            <div class="row">
-              <div class="col-sm-12">
-                <h2>Nous contacter</h2>
-                <i class="ion-record"></i>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.lorem5 <br /> Placeat, quod consectetur adipisicing elit. Placeat, quod.</p>
-              </div>
+
+    <section class="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h2>Nous contacter</h2>
+            <i class="ion-record"></i>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.lorem5 <br /> Placeat, quod consectetur adipisicing elit. Placeat, quod.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12" id="main-form">
+
+          </div>
+        </div>
+        <div class="row mt-4 mb-3">
+          <div class="col-sm-6">
+            <div class="form">
+              <form action="index.html">
+                <fieldset>
+
+
+                  <label for="name">Nom</label>
+                  <input type="text" id="name" name="name" placeholder="Votre Nom"><br />
+
+                  <label for="mail">Email</label>
+                  <input type="email" id="mail" name="mail" placeholder="Votre Email"><br />
+
+                  <label for="sujet">Sujet</label>
+                  <select name="sujet" id="sujet">
+                    <option value="demande-devis">Demande de devis</option>
+                    <option value="suivi-commande">Suivi de commande</option>
+                    <option value="oubli-mdp">Oublie du mot de passe</option>
+                    <option value="parler-conseiller">Joindre un conseiller</option>
+                    <option value="demande-tel">Demande de contact</option>
+                    <option value="autre">Autre demandes</option>
+                  </select>
+
+                  <label for="Message"></label>
+                  <textarea name="message" id="message" placeholder="Votre message" ></textarea>
+
+                </fieldset>
+                <button type="submit">Envoyer</button>
+
+              </form>
+
+
             </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="contact_info">
+              <h3>WebAgency SAS</h3>
+            <p><i class="ion-location"></i> 25 Rue d'Hauteville 75010 Paris</p>
+            <p><i class="ion-iphone"></i>  01 02 03 04 05</p>
 
-              <div class="row">
-                <div class="col-sm-8" id="main-form">
 
-                </div>
-                <div class="col-sm-4">
-                <div class="form">
-                  <h3>Contact Info</h3>
-                  <h4>WebAgency SAS</h4>
-                  <p></p>
-                </div>
-                </div>
-              </div>
+              <figure>
+                  <img src="img/bureau.jpg" alt="" class="work">
+              </figure>
 
+            </div>
 
           </div>
 
-        </section>
-        <script>
-             function initMap() {
-               var uluru = {lat: -25.363, lng: 131.044};
-               var map = new google.maps.Map(document.getElementById('main-form'), {
-                 zoom: 4,
-                 center: uluru
-               });
-               var marker = new google.maps.Marker({
-                 position: uluru,
-                 map: map
-               });
-             }
-           </script>
+        </div>
+      </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <script>
+      function initMap() {
+        var uluru = {
+          lat: 48.873113,
+          lng: 2.349823
+        };
+        var map = new google.maps.Map(document.getElementById('main-form'), {
+          zoom: 15,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          title: 'WebAgency',
+          animation: google.maps.Animation.DROP,
+          map: map
+        });
+      }
+    </script>
 
   </main>
   <!--Jquery-->

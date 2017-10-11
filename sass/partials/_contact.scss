@@ -1,5 +1,105 @@
+/*----------------------------------------------
+--Google Map
+-----------------------------------------------  */
+
 #main-form {
   height: 400px;
-       width: 100%;
-       background-color: grey;
+   width: 100%;
+background-color: grey;
+}
+
+/*----------------------------------------------
+--Form Contact
+-----------------------------------------------  */
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+
+select {
+  padding: 6px;
+  height: 32px;
+  border-radius: 2px;
+}
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: $blue;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid rgba(92, 173, 211, 0.61);
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+
+legend {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+/* Contact info */
+.contact_info  {
+display: flex;
+flex-direction: column;
+p {
+  margin-bottom: 0;
+  &:last-of-type {
+    margin-top: 0;
+
+  }
+  .ion-location,
+  .ion-iphone {
+    color: $blue;
+    font-size: 1.2em;
+    margin-right: 0.3em;
+  }
+}
+.work {
+  transition: all 0.7s;
+
+  &:hover {
+    transform: scale(1.1);
+
+  }
+}
+h3 {
+  color: $blue;
+}
 }

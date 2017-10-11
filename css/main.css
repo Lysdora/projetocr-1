@@ -398,6 +398,10 @@ section p {
   margin-top: 3em;
 }
 
+.mt-4 {
+  margin-top: 4em;
+}
+
 .mb-3 {
   margin-bottom: 3em;
 }
@@ -513,7 +517,7 @@ section p {
 }
 
 /*----------------------------------------------
---Banner
+--Slider
 -----------------------------------------------  */
 .slider {
   background: url("../img/bg1.jpg") no-repeat;
@@ -713,23 +717,130 @@ section p {
   padding-bottom: 20px;
 }
 
-.main-iso img:hover {
-  -webkit-filter: grayscale(70%);
-  filter: grayscale(70%);
-  -webkit-transition: 0.5s all ease-in-out;
-  -o-transition: 0.5s all ease-in-out;
-  transition: 0.5s all ease-in-out;
-}
-
 /* Source portfolio
 https://jsfiddle.net/Lysdora/xbhaaL5w/ */
 /* Source hover btn triangle
 http://jsfiddle.net/ytgs8/8/
 https://jsfiddle.net/Lysdora/e9869tvw/ */
+/*----------------------------------------------
+--Google Map
+-----------------------------------------------  */
 #main-form {
   height: 400px;
   width: 100%;
   background-color: grey;
+}
+
+/*----------------------------------------------
+--Form Contact
+-----------------------------------------------  */
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  margin-bottom: 30px;
+}
+
+select {
+  padding: 6px;
+  height: 32px;
+  border-radius: 2px;
+}
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #5cadd3;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid rgba(92, 173, 211, 0.61);
+  border-width: 1px 1px 3px;
+  -webkit-box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+
+legend {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+/* Contact info */
+.contact_info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.contact_info p {
+  margin-bottom: 0;
+}
+
+.contact_info p:last-of-type {
+  margin-top: 0;
+}
+
+.contact_info p .ion-location,
+.contact_info p .ion-iphone {
+  color: #5cadd3;
+  font-size: 1.2em;
+  margin-right: 0.3em;
+}
+
+.contact_info .work {
+  -webkit-transition: all 0.7s;
+  -o-transition: all 0.7s;
+  transition: all 0.7s;
+}
+
+.contact_info .work:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.contact_info h3 {
+  color: #5cadd3;
 }
 
 /*# sourceMappingURL=main.css.map */

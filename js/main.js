@@ -20,4 +20,12 @@ $('.iso-nav a').click(function(){
 });
 
 
-$('#yourElement').addClass('animated bounceOutLeft');
+ $(document).ready(function(){
+	 $('.carousel').flickity({
+	   // options
+	   cellAlign: 'left',
+		prevNextButtons: false,
+	   contain: true
+	 });
+
+});

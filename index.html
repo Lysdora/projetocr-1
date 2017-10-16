@@ -10,7 +10,9 @@
   <!--Font Awesome-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <!--animate css -->
-   <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <!-- flickity css -->
+  <link rel="stylesheet" href="css/flickity.css">
   <!--css-->
   <link rel="stylesheet" href="css/main.css">
   <!--Google Fonts-->
@@ -43,19 +45,34 @@
 
   <!-- Start: Slider
   ======================================= -->
-  <div class="slider">
-    <div class="slider_container">
-      <div class="slider_text">
+
+
+
+  <div class="carousel mt-3">
+    <div class="carousel-cell">
+      <div class="static-banner static-banner1">
         <h1><span>WebAgency</span> : L'Agence de tous <br />vos projets !</h1>
         <p>Vous avez un projet web ? La WebAgency vous aide à le realiser !</p>
-        <a href="#" class="btn slider_btn" role="button">Plus d'infos</a>
+        <a class="btn-portfolio" href="#" role="button">Plus d'infos</a>
       </div>
+      <img src="img/bg1.jpg" alt="">
+    </div>
+    <div class="carousel-cell">
+      <div class="static-banner static-banner1">
+        <h1><span>WebAgency</span> : L'Agence de tous <br />vos projets !</h1>
+        <p>Vous avez un projet web ? La WebAgency vous aide à le realiser !</p>
+        <a class="btn-portfolio" href="#" role="button">Plus d'infos</a>
+      </div>
+      <img src="img/bg2.jpg" alt="">
     </div>
   </div>
+
+
 
   <!-- Start: Main Content
   ======================================= -->
   <main>
+
 
 
     <!-- Start: Section Services
@@ -232,7 +249,7 @@
                   </select>
 
                   <label for="Message"></label>
-                  <textarea name="message" id="message" placeholder="Votre message" ></textarea>
+                  <textarea name="message" id="message" placeholder="Votre message"></textarea>
 
                 </fieldset>
                 <button type="submit">Envoyer</button>
@@ -245,10 +262,10 @@
           <div class="col-sm-6">
             <div class="contact_info">
               <h3>WebAgency SAS</h3>
-            <p><i class="ion-location"></i> 25 Rue d'Hauteville 75010 Paris</p>
-            <p><i class="ion-iphone"></i>  01 02 03 04 05</p>
+              <p><i class="ion-location"></i> 25 Rue d'Hauteville 75010 Paris</p>
+              <p><i class="ion-iphone"></i> 01 02 03 04 05</p>
               <figure>
-                  <img src="img/bureau.jpg" alt="" class="work">
+                <img src="img/bureau.jpg" alt="" class="work">
               </figure>
               <nav class="social-icon">
                 <h4>Nous Suivre</h4>
@@ -268,6 +285,7 @@
 
     </section>
 
+  </main>
 
 
 
@@ -276,25 +294,24 @@
 
 
 
-
-    <script>
-      function initMap() {
-        var uluru = {
-          lat: 48.873113,
-          lng: 2.349823
-        };
-        var map = new google.maps.Map(document.getElementById('main-form'), {
-          zoom: 15,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          title: 'WebAgency',
-          animation: google.maps.Animation.DROP,
-          map: map
-        });
-      }
-    </script>
+  <script>
+    function initMap() {
+      var uluru = {
+        lat: 48.873113,
+        lng: 2.349823
+      };
+      var map = new google.maps.Map(document.getElementById('main-form'), {
+        zoom: 15,
+        center: uluru
+      });
+      var marker = new google.maps.Marker({
+        position: uluru,
+        title: 'WebAgency',
+        animation: google.maps.Animation.DROP,
+        map: map
+      });
+    }
+  </script>
 
   </main>
   <!--Jquery-->
@@ -305,6 +322,7 @@
   <script src="js/main.js"></script>
   <!--Google Map JS API-->
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB90uD4OAUYptlG_Y21NEPQv72vU_Fj00A&callback=initMap"></script>
+  <script src="js/flickity.min.js"></script>
 </body>
 
 </html>

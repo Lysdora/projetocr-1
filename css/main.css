@@ -550,7 +550,6 @@ section p {
   position: absolute;
   z-index: 1;
   color: white;
-  pointer-events: none;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -720,7 +719,8 @@ section p {
 }
 
 .media .media-left .fa-line-chart,
-.media .media-left .fa-cubes {
+.media .media-left .fa-cubes,
+.media .media-left .fa-pie-chart {
   color: #5cadd3;
   padding-right: 1em;
   font-size: 1.4em;
@@ -852,24 +852,6 @@ select {
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
   margin-bottom: 30px;
   border-radius: 3px;
-}
-
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
-  color: #5cadd3;
-  opacity: 0.7;
-}
-
-input:-ms-input-placeholder,
-textarea:-ms-input-placeholder {
-  color: #5cadd3;
-  opacity: 0.7;
-}
-
-input::placeholder,
-textarea::placeholder {
-  color: #5cadd3;
-  opacity: 0.7;
 }
 
 select {

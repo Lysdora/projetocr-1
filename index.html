@@ -9,8 +9,7 @@
   <link rel="stylesheet" href="css/ionicons.css">
   <!--Font Awesome-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!--animate css -->
-  <link rel="stylesheet" href="css/animate.css">
+
   <!-- flickity css -->
   <link rel="stylesheet" href="css/flickity.css">
   <!--css-->
@@ -33,9 +32,9 @@
       <!--navigation-->
       <ul class="mainheader_nav">
         <li><a href="#">Accueil</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </header>
     <!-- /End: Header
@@ -58,11 +57,7 @@
       <img src="img/bg1.jpg" alt="">
     </div>
     <div class="carousel-cell">
-      <div class="static-banner static-banner1">
-        <h1><span>WebAgency</span> : L'Agence de tous <br />vos projets !</h1>
-        <p>Vous avez un projet web ? La WebAgency vous aide à le realiser !</p>
-        <a class="btn-portfolio" href="#" role="button">Plus d'infos</a>
-      </div>
+
       <img src="img/bg2.jpg" alt="">
     </div>
   </div>
@@ -78,20 +73,20 @@
     <!-- Start: Section Services
       ======================================= -->
 
-    <section class="services">
+    <section class="services" id="services">
       <div class="container bt-top bt-bottom">
         <div class="row ">
           <div class="col-sm-12 ">
             <h2>Nos services</h2>
             <i class="ion-record"></i>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br /> Placeat, quod consectetur adipisicing elit. Placeat, quod.</p>
+            <p>WebAgency est une agence digital eco-responsable.<br /> Priorité au desing emotionnel pour plaire aux petits et aux grands.</p>
           </div>
         </div>
         <div class="row mt-3">
-          <div class="col-sm-6 animated slideInLeft ">
+          <div class="col-sm-6  ">
             <img src="img/main-feature.png" alt="illustration services">
           </div>
-          <div class="col-sm-6 animated slideInRight">
+          <div class="col-sm-6 ">
             <!--UX desing-->
             <div class="media ">
               <div class="media-left">
@@ -99,7 +94,7 @@
               </div>
               <div class="media_content">
                 <h3>UX Desing</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, explicabo.</p>
+                <p>Experience utilisateur emotionnel, produit ergonomique, pratique et accesible.</p>
               </div>
             </div>
             <!--UI desing-->
@@ -108,18 +103,18 @@
                 <i class="fa fa-cubes " aria-hidden="true"></i>
               </div>
               <div class="media_content">
-                <h3>UX Desing</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, explicabo.</p>
+                <h3>UI desing</h3>
+                <p>L'interface utilisateur amelioré, interaction visuel afin de capter l'attention.</p>
               </div>
             </div>
             <!--SEO-->
             <div class="media">
               <div class="media-left">
-                <i class="fa fa-line-chart " aria-hidden="true"></i>
+                <i class="fa fa-pie-chart " aria-hidden="true"></i>
               </div>
               <div class="media_content">
                 <h3>SEO</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, explicabo.</p>
+                <p>Code optimisé SEO avec un referencement naturel et positionnement dans les resultats des moteurs de recherche.</p>
               </div>
             </div>
 
@@ -138,13 +133,13 @@
     <!-- Start: Section Projets
       ======================================= -->
 
-    <section class="projets">
+    <section class="projets" id="portfolio">
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
             <h2>Nos Projets</h2>
             <i class="ion-record"></i>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.lorem5 <br /> Placeat, quod consectetur adipisicing elit. Placeat, quod.</p>
+            <p>Une selection de quelques projets <br /> Une idée, une envie ? n'hesitez pas à nous en faire part !.</p>
           </div>
         </div>
 
@@ -166,7 +161,7 @@
         <!--/end BTN group button filter-->
 
         <!--Sart Portfolio isotope -->
-        <div class="main-iso">
+        <div class="main-iso" id="portfolio">
           <!--First line item img portfolio-->
           <div class="row">
             <div class="col-sm-3 item creative">
@@ -174,29 +169,29 @@
               <div class="bottomright"></div>
             </div>
             <div class="col-sm-3 item portfolio">
-              <img src="img/02.jpg" alt="">
+              <img src="img/02.jpg" alt="img portfolio">
             </div>
             <div class="col-sm-3 item corporate">
-              <img src="img/03.jpg" alt="">
+              <img src="img/03.jpg" alt="img portfolio">
             </div>
             <div class="col-sm-3 item creative">
-              <img src="img/04.jpg" alt="">
+              <img src="img/04.jpg" alt="img portfolio">
             </div>
           </div>
 
           <!--Second line item portfolio img-->
           <div class="row">
             <div class="col-sm-3 item creative">
-              <img src="img/05.jpg" alt="">
+              <img src="img/05.jpg" alt="img portfolio">
             </div>
             <div class="col-sm-3 item portfolio">
-              <img src="img/06.jpg" alt="">
+              <img src="img/06.jpg" alt="img portfolio">
             </div>
             <div class="col-sm-3 item corporate">
-              <img src="img/07.jpg" alt="">
+              <img src="img/07.jpg" alt="img portfolio">
             </div>
             <div class="col-sm-3 item portfolio">
-              <img src="img/08.jpg" alt="">
+              <img src="img/08.jpg" alt="img portfolio">
             </div>
           </div>
         </div>
@@ -204,19 +199,22 @@
       </div>
 
     </section>
+
+
     <!-- /End: Section Projets
       ======================================= -->
 
     <!-- Start: Section Contact
         ======================================= -->
 
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
             <h2>Nous contacter</h2>
             <i class="ion-record"></i>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.lorem5 <br /> Placeat, quod consectetur adipisicing elit. Placeat, quod.</p>
+            <p>Notre Agence est situé en plein Centre de Paris.<br>N'hesitez pas à nous contacter via formulaire de contact ou bien par telephone.</p>
+
           </div>
         </div>
 
@@ -318,6 +316,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <!--isotope cdn-->
   <script src="js/isotope.js"></script>
+
   <!--main js-->
   <script src="js/main.js"></script>
   <!--Google Map JS API-->

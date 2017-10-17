@@ -18,12 +18,15 @@
     color: $blue;
     font-size: 1.4em;
   }
+
   p {
     font-weight: 400;
     margin-top: 1em;
     margin-bottom: 3em;
   }
 }
+
+
 
 .media {
   display: flex;
@@ -37,7 +40,8 @@
      margin-left: 1em;
 
       .fa-line-chart,
-      .fa-cubes {
+      .fa-cubes,
+      .fa-pie-chart {
        color: $blue;
        padding-right: 1em;
        font-size: 1.4em;

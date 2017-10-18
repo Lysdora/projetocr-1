@@ -25,7 +25,11 @@ $('.iso-nav a').click(function(){
 	   // options
 	   cellAlign: 'left',
 		prevNextButtons: false,
-	   contain: true
+	   contain: true   
+                
 	 });
+     
+
+     
 
 });

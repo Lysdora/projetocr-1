@@ -1,0 +1,35 @@
+/*----------------------------------------------
+--Footer
+-----------------------------------------------  */
+
+.main-footer {
+    background-color: $blue;
+    color: #f5eeee;
+
+    p span {
+        font-weight: 600;
+    }
+    
+    h4 {
+        padding: 1em;
+    }
+
+    .footer-nav {
+        display: flex;
+        justify-content: center;
+
+        li {
+            padding: 0.8em;
+        }
+        a {
+            color: #fff;
+            padding-bottom: 0.5em;
+             border-bottom: 1px solid transparent;
+        }
+
+        a:hover {
+            border-bottom: 1px solid #fff;
+        }
+    }
+
+}

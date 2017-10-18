@@ -363,7 +363,12 @@ ul > li {
   list-style-type: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   padding: 0;
 }
@@ -413,6 +418,36 @@ section p {
 
 .bt-top {
   border-top: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+/* Round circle after heading */
+.round {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #5cadd3;
+  margin: 0 auto;
+}
+
+.round::before {
+  content: '';
+  position: absolute;
+  right: 30px;
+  top: 9px;
+  width: 50px;
+  height: 2px;
+  background: grey;
+}
+
+.round::after {
+  content: '';
+  position: absolute;
+  left: 30px;
+  top: 9px;
+  width: 50px;
+  height: 2px;
+  background: grey;
 }
 
 /* Header style
@@ -521,16 +556,24 @@ section p {
 --Slider
 -----------------------------------------------  */
 .carousel {
-  background: #fafafa;
-  position: relative;
+  margin: 0;
+  padding: 0;
 }
 
 .carousel-cell {
+  background-image: url(../../img/bg1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 750px;
   width: 100%;
-  height: auto;
-  background: #5cadd3;
-  border-radius: 5px;
-  counter-increment: gallery-cell;
+  background-position: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.carousel-cell .container {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -540,157 +583,158 @@ section p {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-}
-
-.carousel-cell img {
-  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .carousel-cell .static-banner {
-  position: absolute;
-  z-index: 1;
-  color: white;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  font-size: 1em;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  color: #fff;
+  padding: 3em;
 }
 
-.carousel-cell h1 {
-  font-size: 4em;
-  line-height: 1.2em;
-  margin-top: -1.8em;
-  background-color: rgba(0, 0, 0, 0.19);
+.carousel-cell .static-banner a {
+  color: #fff;
+  font-weight: 600;
+  background-color: #5cadd3;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  border-radius: 3px;
 }
 
-.carousel-cell h1 span {
+.carousel-cell .static-banner span {
   color: #5cadd3;
 }
 
-.carousel-cell p {
-  font-weight: 600;
-  font-size: 0.7em;
-  line-height: 1.1em;
-  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
-  background-color: rgba(0, 0, 0, 0.19);
-}
-
-.carousel-cell a {
-  background-color: #5cadd3;
-  color: #fff;
-  font-weight: 600;
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
-  padding: 0.2em;
-  margin-top: 0.5em;
-  -webkit-transition: 0.5s all ease-in-out;
-  -o-transition: 0.5s all ease-in-out;
-  transition: 0.5s all ease-in-out;
-  border-radius: 2px;
-  border-bottom: 2px solid #5cadd3;
-  font-size: 0.5em;
-}
-
-.carousel-cell .static-banner1 {
+.carousel-cell2 {
+  background-image: url(../../img/bg2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 750px;
+  width: 100%;
+  background-position: center;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
-  margin-top: 10%;
-  margin-left: 10%;
 }
 
-/* Mobile style  @iphone 5 and max little tablet */
+/*----------------------------------------------
+--Slider Media Queries
+-----------------------------------------------  */
 @media (min-width: 320px) {
+  .carousel-cell {
+    background-image: url(../../img/mob.bg1.jpg);
+    background-size: auto;
+    background-position: center left;
+  }
+  .carousel-cell .static-banner {
+    padding: 0.5em;
+    background: rgba(0, 0, 0, 0.1);
+    margin: 1em;
+  }
   .carousel-cell h1 {
-    font-size: 1em;
-    line-height: 1.2em;
+    font-size: 1.2em;
+    line-height: 1.4em;
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+    margin-bottom: 1em;
   }
   .carousel-cell p {
-    line-height: 1.3em;
-    font-size: 0.8em;
-    text-shadow: 2px 4px 3px #262626;
+    font-weight: 400;
+    margin-bottom: 1em;
+    font-size: 1.1em;
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
   }
   .carousel-cell a {
-    padding: 0.2em;
-    font-size: 0.7em;
+    padding: 0.4em;
+  }
+  .carousel-cell2 {
+    background-image: url(../../img/mob.bg2.jpg);
+    background-size: auto;
+    background-position: right;
+  }
+  .carousel {
+    height: 100%;
+    width: 100%;
   }
 }
 
 @media (min-width: 576px) {
+  .carousel-cell {
+    background-image: url(../../img/mob1.bg1.jpg);
+    background-size: auto;
+    height: 750px;
+    margin: 0;
+    padding: 0;
+  }
+  .carousel-cell .static-banner {
+    padding: 0;
+    background: transparent;
+    margin: 1em;
+  }
   .carousel-cell h1 {
-    font-size: 1.7em;
-    line-height: 1.4em;
-    background-color: transparent;
+    font-size: 2.1em;
   }
   .carousel-cell p {
-    font-size: 1.4em;
-    line-height: 1.2em;
-    background-color: transparent;
-  }
-  .carousel-cell a {
-    font-size: 1em;
-    padding: 0.3em;
-  }
-}
-
-/* Tablet style */
-@media (min-width: 768px) {
-  .carousel-cell h1 {
-    font-size: 2em;
-    margin-top: -1.1em;
-  }
-  .carousel-cell p {
-    line-height: 2em;
-    font-size: 1.2em;
-  }
-  .carousel-cell a {
-    font-size: 1.1em;
-    padding: 0.3em;
-  }
-}
-
-/* laptop style */
-@media (min-width: 1200px) {
-  .carousel-cell h1 {
-    font-size: 3em;
-    margin-top: 0;
-    background-color: transparent;
-  }
-  .carousel-cell p {
-    line-height: 2em;
-    font-size: 2em;
-    background-color: transparent;
-  }
-  .carousel-cell a {
     font-size: 1.5em;
-    padding: 0.3em;
+  }
+  .carousel-cell a {
+    padding: 0.6em;
+    font-size: 1.1em;
+  }
+  .carousel-cell2 {
+    background-image: url(../../img/mob2.bg2.jpg);
+    background-size: auto;
+    height: 750px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .carousel-cell {
+    background-image: url(../../img/1124.bg1.jpg);
+    background-size: cover;
+  }
+  .carousel-cell h1 {
+    font-size: 2.6em;
+  }
+  .carousel-cell p {
+    font-size: 2em;
+    line-height: 1.1em;
+  }
+  .carousel-cell2 {
+    background-image: url(../../img/1124.bg2.jpg);
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1025px) {
+  .carousel-cell {
+    background-image: url(../../img/bg1.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .carousel-cell2 {
+    background-image: url(../../img/bg2.jpg);
+    background-position: center;
+    background-size: cover;
   }
 }
 
 .services {
   text-align: center;
   background-color: rgba(250, 250, 250, 0.38);
-}
-
-.services .ion-record {
-  color: #5cadd3;
-  font-size: 1.4em;
 }
 
 .services p {
@@ -978,6 +1022,47 @@ label {
 
 .social-icon .ion-social-googleplus:hover {
   color: #dd4b39;
+}
+
+/*----------------------------------------------
+--Footer
+-----------------------------------------------  */
+.main-footer {
+  background-color: #5cadd3;
+  color: #f5eeee;
+}
+
+.main-footer p span {
+  font-weight: 600;
+}
+
+.main-footer h4 {
+  padding: 1em;
+}
+
+.main-footer .footer-nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.main-footer .footer-nav li {
+  padding: 0.8em;
+}
+
+.main-footer .footer-nav a {
+  color: #fff;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid transparent;
+}
+
+.main-footer .footer-nav a:hover {
+  border-bottom: 1px solid #fff;
 }
 
 /*# sourceMappingURL=main.css.map */

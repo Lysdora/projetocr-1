@@ -1,57 +1,60 @@
-
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  font-size: 1em;
-  line-height: 1.6;
-  font-weight: 300
+    font-size: 1em;
+    line-height: 1.6;
+    font-weight: 300
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 ul > li {
-  list-style-type: none;
+    list-style-type: none;
 }
 
-h1,h2,h3,h4,h5,h6 {
-  margin: 0;
-  padding: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
 }
 
 section {
-  margin-top: 2em;
-padding: 1em;
-  // padding: 3em;
-  // border-top: 1px solid $color-border-top;
-  text-align: center;
-  h2 {
-      text-transform: uppercase;
-      font-size: $font-size-h2;
-      color: $color-h2;
-      letter-spacing: -2px;
-      word-spacing: 4px;
-      margin-top: 1em;
+    margin-top: 2em;
+    padding: 1em; // padding: 3em;
+    // border-top: 1px solid $color-border-top;
+    text-align: center;
+    h2 {
+        text-transform: uppercase;
+        font-size: $font-size-h2;
+        color: $color-h2;
+        letter-spacing: -2px;
+        word-spacing: 4px;
+        margin-top: 1em;
     }
     .ion-record {
-      // background-color: $blue;
-      color: $blue;
-      font-size: 1.4em;
+        // background-color: $blue;
+        color: $blue;
+        font-size: 1.4em;
     }
     p {
-      font-weight: 400;
-      margin-top: 1em;
-      margin-bottom: 3em;
+        font-weight: 400;
+        margin-top: 1em;
+        margin-bottom: 3em;
     }
 
 }
@@ -59,24 +62,57 @@ padding: 1em;
 
 
 /* Helpers */
+
 .mt-3 {
-  margin-top: 3em;
+    margin-top: 3em;
 }
 
 .mt-4 {
-  margin-top: 4em;
+    margin-top: 4em;
 }
 
 .mb-3 {
-  margin-bottom: 3em;
+    margin-bottom: 3em;
 }
 
 
 .bt-bottom {
 
-  border-bottom: 1px solid $color-border-top;
+    border-bottom: 1px solid $color-border-top;
 }
 
-.bt-top{
+.bt-top {
     border-top: 1px solid $color-border-top;
+}
+
+/* Round circle after heading */
+
+
+.round {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: $blue;
+    margin: 0 auto;
+}
+
+.round::before {
+    content: '';
+    position: absolute;
+    right: 30px;
+    top: 9px;
+    width: 50px;
+    height: 2px;
+    background: grey;
+}
+
+.round::after {
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: 9px;
+    width: 50px;
+    height: 2px;
+    background: grey;
 }

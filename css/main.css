@@ -92,10 +92,6 @@ svg:not(:root) {
   overflow: hidden;
 }
 
-figure {
-  margin: 1em 40px;
-}
-
 hr {
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
@@ -560,6 +556,7 @@ section p {
   padding: 0;
 }
 
+/* style general slide 1 */
 .carousel-cell {
   background-image: url(../../img/bg1.jpg);
   background-size: cover;
@@ -616,6 +613,7 @@ section p {
   color: #5cadd3;
 }
 
+/* Style general slide 2 */
 .carousel-cell2 {
   background-image: url(../../img/bg2.jpg);
   background-size: cover;
@@ -629,10 +627,54 @@ section p {
   display: flex;
 }
 
+.carousel-cell2 .container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.carousel-cell2 .static-banner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  color: #fff;
+  padding: 3em;
+}
+
+.carousel-cell2 .static-banner a {
+  color: #fff;
+  font-weight: 600;
+  background-color: #5cadd3;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  border-radius: 3px;
+}
+
+.carousel-cell2 .static-banner span {
+  color: #5cadd3;
+}
+
 /*----------------------------------------------
 --Slider Media Queries
 -----------------------------------------------  */
 @media (min-width: 320px) {
+  /* style slide 1 */
   .carousel-cell {
     background-image: url(../../img/mob.bg1.jpg);
     background-size: auto;
@@ -658,10 +700,25 @@ section p {
   .carousel-cell a {
     padding: 0.4em;
   }
+  /* style slide 2 */
   .carousel-cell2 {
     background-image: url(../../img/mob.bg2.jpg);
     background-size: auto;
     background-position: right;
+  }
+  .carousel-cell2 .static-banner {
+    padding: 0.5em;
+    background: rgba(0, 0, 0, 0.1);
+    margin: 1em;
+  }
+  .carousel-cell2 h2 {
+    font-size: 1.2em;
+    line-height: 1.4em;
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+    margin-bottom: 1em;
+  }
+  .carousel-cell2 a {
+    padding: 0.4em;
   }
   .carousel {
     height: 100%;
@@ -670,6 +727,7 @@ section p {
 }
 
 @media (min-width: 576px) {
+  /* style slide 1 */
   .carousel-cell {
     background-image: url(../../img/mob1.bg1.jpg);
     background-size: auto;
@@ -680,7 +738,7 @@ section p {
   .carousel-cell .static-banner {
     padding: 0;
     background: transparent;
-    margin: 1em;
+    margin: 3em;
   }
   .carousel-cell h1 {
     font-size: 2.1em;
@@ -692,6 +750,7 @@ section p {
     padding: 0.6em;
     font-size: 1.1em;
   }
+  /* style slide 2 */
   .carousel-cell2 {
     background-image: url(../../img/mob2.bg2.jpg);
     background-size: auto;
@@ -699,9 +758,22 @@ section p {
     margin: 0;
     padding: 0;
   }
+  .carousel-cell2 .static-banner {
+    padding: 0;
+    background: transparent;
+    margin: 3em;
+  }
+  .carousel-cell2 h2 {
+    font-size: 2.1em;
+  }
+  .carousel-cell2 a {
+    padding: 0.6em;
+    font-size: 1.1em;
+  }
 }
 
 @media (min-width: 992px) {
+  /* style slide 1 */
   .carousel-cell {
     background-image: url(../../img/1124.bg1.jpg);
     background-size: cover;
@@ -713,18 +785,24 @@ section p {
     font-size: 2em;
     line-height: 1.1em;
   }
+  /* style slide 2 */
   .carousel-cell2 {
     background-image: url(../../img/1124.bg2.jpg);
     background-size: cover;
   }
+  .carousel-cell2 h2 {
+    font-size: 2.6em;
+  }
 }
 
 @media (min-width: 1025px) {
+  /* style slide 1 */
   .carousel-cell {
     background-image: url(../../img/bg1.jpg);
     background-position: center;
     background-size: cover;
   }
+  /* style slide 2 */
   .carousel-cell2 {
     background-image: url(../../img/bg2.jpg);
     background-position: center;
@@ -760,14 +838,40 @@ section p {
 
 .media .media-left {
   margin-left: 1em;
+  /* Here style aboute icon rounded in section service */
+}
+
+.media .media-left .iconround {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  width: 2em;
+  height: 2em;
+  border: 1px solid #E8E8E8;
+  border-radius: 100%;
+  font-size: 1.75em;
+  margin-top: 0.2em;
+}
+
+.media .media-left .iconround:after {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: -5px 0 0 0;
+  border-radius: 100%;
+  background-color: #5cadd3;
+  -webkit-box-shadow: 0 0 0 4px white;
+  box-shadow: 0 0 0 4px white;
+  position: absolute;
+  top: 50%;
+  right: -5px;
 }
 
 .media .media-left .fa-line-chart,
 .media .media-left .fa-cubes,
 .media .media-left .fa-pie-chart {
   color: #5cadd3;
-  padding-right: 1em;
-  font-size: 1.4em;
 }
 
 .projets {
@@ -817,7 +921,7 @@ section p {
   display: flex;
   padding: 1em;
   margin-top: 1em;
-  margin-left: 1em;
+  /* I remove margin-left because is not that the psd */
   -webkit-transition: 0.5s all ease-in-out;
   -o-transition: 0.5s all ease-in-out;
   transition: 0.5s all ease-in-out;
@@ -849,8 +953,52 @@ section p {
   position: relative;
 }
 
-.main-iso img {
-  padding-bottom: 20px;
+.main-iso figure img {
+  width: 100%;
+  padding-bottom: 0.6em;
+}
+
+figure {
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.021);
+}
+
+figure figcaption {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  width: 100%;
+  opacity: 0;
+  bottom: -30%;
+  left: 0;
+  margin: 1em;
+  margin-left: 0;
+  -webkit-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+figure figcaption p {
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+figure:hover figcaption {
+  opacity: 1;
+  bottom: 0;
+}
+
+/* icone overlay hover */
+figcaption div {
+  width: 2em;
+  height: 2em;
+  background-color: #5cadd3;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  position: absolute;
+  left: 85%;
+  top: -20px;
 }
 
 /* Source portfolio
@@ -864,7 +1012,6 @@ https://jsfiddle.net/Lysdora/e9869tvw/ */
 #main-form {
   height: 400px;
   width: 100%;
-  background-color: grey;
 }
 
 /*----------------------------------------------
@@ -1022,6 +1169,10 @@ label {
 
 .social-icon .ion-social-googleplus:hover {
   color: #dd4b39;
+}
+
+#street {
+  position: relative;
 }
 
 /*----------------------------------------------

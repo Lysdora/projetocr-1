@@ -7,6 +7,8 @@
     padding: 0;
 }
 
+/* style general slide 1 */
+
 .carousel-cell {
     background-image: url(../../img/bg1.jpg);
     background-size: cover;
@@ -45,6 +47,8 @@
     }
 }
 
+/* Style general slide 2 */
+
 .carousel-cell2 {
     background-image: url(../../img/bg2.jpg);
     background-size: cover;
@@ -53,6 +57,36 @@
     width: 100%;
     background-position: center;
     display: flex;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .static-banner {
+        display: flex;
+        align-self: center;
+        color: #fff;
+        padding: 3em;
+
+
+        a {
+            color: #fff;
+            font-weight: 600;
+            background-color: $blue;
+            align-self: flex-start;
+            border-radius: 3px;
+        }
+
+        span {
+            color: $blue;
+        }
+
+    }
+
+
 }
 
 
@@ -61,6 +95,7 @@
 -----------------------------------------------  */
 
 @media (min-width: 320px) {
+    /* style slide 1 */
     .carousel-cell {
         background-image: url(../../img/mob.bg1.jpg);
         background-size: auto;
@@ -97,10 +132,30 @@
 
     }
 
+    /* style slide 2 */
     .carousel-cell2 {
         background-image: url(../../img/mob.bg2.jpg);
         background-size: auto;
         background-position: right;
+
+        .static-banner {
+            padding: 0.5em;
+            background: rgba(0, 0, 0, 0.1);
+            margin: 1em;
+        }
+
+        h2 {
+            font-size: 1.2em;
+            line-height: 1.4em;
+            text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+            margin-bottom: 1em;
+        }
+
+        a {
+            padding: 0.4em;
+        }
+
+
     }
 
     .carousel {
@@ -113,6 +168,7 @@
 
 
 @media (min-width: 576px) {
+    /* style slide 1 */
     .carousel-cell {
         background-image: url(../../img/mob1.bg1.jpg);
         background-size: auto;
@@ -123,7 +179,7 @@
         .static-banner {
             padding: 0;
             background: transparent;
-            margin: 1em;
+            margin: 3em;
         }
 
 
@@ -142,17 +198,33 @@
 
     }
 
+    /* style slide 2 */
     .carousel-cell2 {
         background-image: url(../../img/mob2.bg2.jpg);
         background-size: auto;
         height: 750px;
         margin: 0;
         padding: 0;
+
+        .static-banner {
+            padding: 0;
+            background: transparent;
+            margin: 3em;
+        }
+
+        h2 {
+            font-size: 2.1em;
+        }
+        a {
+            padding: 0.6em;
+            font-size: 1.1em;
+        }
     }
 
 }
 
 @media (min-width: 992px) {
+    /* style slide 1 */
     .carousel-cell {
         background-image: url(../../img/1124.bg1.jpg);
         background-size: cover;
@@ -165,23 +237,29 @@
             line-height: 1.1em;
         }
     }
+
+    /* style slide 2 */
     .carousel-cell2 {
         background-image: url(../../img/1124.bg2.jpg);
         background-size: cover;
+
+        h2 {
+            font-size: 2.6em;
+        }
+
     }
-
-
 }
 
 
-
 @media (min-width:1025px) {
+    /* style slide 1 */
     .carousel-cell {
         background-image: url(../../img/bg1.jpg);
-     background-position: center;
+        background-position: center;
         background-size: cover;
     }
 
+    /* style slide 2 */
     .carousel-cell2 {
         background-image: url(../../img/bg2.jpg);
         background-position: center;

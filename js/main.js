@@ -24,7 +24,7 @@ $('.iso-nav a').click(function(){
 	 $('.carousel').flickity({
 	   // options
 	   cellAlign: 'left',
-		prevNextButtons: false,
+		prevNextButtons: true,
 	   contain: true   
                 
 	 });
